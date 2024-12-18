@@ -1,0 +1,168 @@
+/*******************************background avec video**********************************/
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Évite le défilement */
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste la vidéo pour couvrir tout l'écran */
+    z-index: -1; /* Place la vidéo derrière le contenu */
+}
+
+
+/***********************************************************************************/
+/*********************************** Nav bar ************************************************/
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+/*****************************photo**********************************************/
+
+#photo {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    text-align: center;
+}
+
+#photo img {
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    box-shadow: 0 0 10px #ff9800;
+}
+#nom {
+color: white;
+position: relative;
+left: 480px;
+top: 350px;
+}
+/******************************************************************************/
+
+main {
+    max-width: 1500px; 
+    padding: 40px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+    width: 80%; 
+    text-align: center; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative; 
+    top: 70px; 
+}
+
+main h1 {
+    font-size: 1em;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+
+section {
+    font-size: large;
+    margin-bottom: 30px; /*l'espacement entre les sections */
+    padding: 10px;
+    border: 1px solid #ff9800; 
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    width: 70%; 
+    text-align: left; 
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+    box-shadow 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Transitions plus fluides */}
+
+/* Effet au survol des sections */
+section:hover {
+    transform: scale(1.1) rotate(2deg); /* Zoom et légère rotation */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre plus forte */
+}
+
+section h2 {
+    color: #ff9800; 
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+section p {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Espacement plus petit entre les éléments */
+    color: #333; /* Texte sombre */
+    font-size: 1em;
+}
+
+ul li h4 {
+    color: #ff9800; /* Couleur orange pour les sous-titres */
+    margin-bottom: 5px;
+}
+section img {
+    width: 400px;
+    height: 180px;
+    float: right; /* Déplace l'image à gauche */
+    margin-right: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour les images */
+    margin-bottom: 15px;
+}
+/********************************************************************************************/
+/* Footer */
+footer {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Séparateurs élégants */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff9800, #000);
+    margin: 40px 0;
+}
+/***************************************************************************************/

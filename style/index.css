@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Évite le défilement */
+}
+/*******************************background avec video**********************************/
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste la vidéo pour couvrir tout l'écran */
+    z-index: -1; /* Place la vidéo derrière le contenu */
+}
+
+.content {
+    z-index: 1; /* Assure que le contenu est au-dessus de la vidéo */
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 90px;
+
+   
+}
+
+/***********************************************************************************/
+/*****************************photo**********************************************/
+#photo {
+    position: fixed;
+    right: 20px;    
+    margin: 60px;
+    top: 150px;
+    border-radius: 15px ;
+}
+#photo img {
+    
+    border-radius: 30%; /* Arrondit les coins de l'image */
+}
+#nom {
+color: white;
+position: relative;
+left: 480px;
+top: 350px;
+}
+/******************************************************************************/
+/*********************************** Nav bar ************************************************/
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+/**********************paragraphe avec animation******************************************/
+p{
+    color: beige;
+    position: relative;   
+    left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden; /* Masque le texte qui n'est pas encore visible */
+}
+
+p span {
+    display: inline-block;
+    opacity: 0; /* Commence avec les mots invisibles */
+    animation: typing 0.2s steps(1) forwards;
+    animation-delay: var(--delay);
+}
+
+/* Animation pour chaque mot */
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/********************************************************************************************/
+
+
+footer {
+    color: white; /* Change la couleur du texte en blanc */
+    padding: 20px;
+    position: fixed;
+    right: 700px;
+    top: 550px;
+}
+
+/********************************icon reseau sociaux***************************************/
+#icon {
+    position: fixed; 
+    bottom: 120px; /* Distance par rapport au haut */
+    left: 45%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Ajuste le centrage */
+    display: flex; /* Permet l'affichage en ligne */
+    gap: 20px; /* Espace entre les icônes */
+    z-index: 10; /* Priorité pour qu'elles apparaissent au-dessus */
+}
+
+/* Styles des images */
+#icon img {
+    transition: transform 0.3s ease; 
+    border-radius: 15px;
+}
+
+/* Effet au survol */
+#icon img:hover {
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+}

@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*********************************** Nav bar ************************************************/
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+#photo {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    text-align: center;
+}
+
+#photo img {
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    box-shadow: 0 0 10px #ff9800;
+}
+/**************************************main*******************************************/
+
+
+/* **************************Formulaire de contact **********************************/
+.contact-form {
+    background: transparent; 
+    border: 2px solid rgba(255, 152, 0, 0.5); 
+    border-radius: 10px;
+    padding: 30px;
+    margin: 100px auto 50px;
+    width: auto;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Ombre légère pour la profondeur */
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #ff9800; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1.1em;
+    color: #ffd54f;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 152, 0, 0.4); 
+    border-radius: 5px;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.3); 
+    color: #fff;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ff9800;
+    box-shadow: 0 0 10px #ff9800; 
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffd54f;
+    transform: translateY(-5px); /* Légère élévation */
+}
+
+/**********************************footer*****************************************/
+
+/* Footer */
+footer {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Séparateurs élégants */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff9800, #000);
+    margin: 40px 0;
+}
+
+/********************************icon reseau sociaux***************************************/
+#icon {
+    position: relative; 
+    bottom: 20px; 
+    left: 95%; 
+    transform: translateX(-50%); /* Ajuste le centrage */
+    display: flex; /* Permet l'affichage en ligne */
+    gap: 20px; /* Espace entre les icônes */
+    z-index: 10; /* Priorité pour qu'elles apparaissent au-dessus */
+}
+
+#icon img {
+    transition: transform 0.3s ease; 
+    border-radius: 15px;
+}
+
+/* Effet au survol */
+#icon img:hover {
+    transform: scale(1.2); /* Agrandit légèrement l'icône */
+}

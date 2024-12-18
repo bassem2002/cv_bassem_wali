@@ -1,0 +1,155 @@
+/* Style global */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Vidéo de fond */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+/* Photo de profil */
+#photo {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    text-align: center;
+}
+
+#photo img {
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+    box-shadow: 0 0 10px #ff9800;
+}
+/* Footer */
+footer {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/**************************************************************************************************************/
+/* Section principale */
+/* Main Transparent */
+main {
+    background: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
+    color: #fff; /* Texte en blanc */
+    margin: 100px auto; /* Marge en haut et centrage horizontal */
+    padding: 30px;
+    max-width: 1000px; /* Limite la largeur */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Effet d'ombre */
+    backdrop-filter: blur(10px); /* Effet de flou pour un fond plus élégant */
+    text-align: justify;
+}
+
+/* Titres des sections */
+main h2 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Paragraphes */
+main p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Images */
+main img {
+    display: block;
+    margin: 30px auto;  
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Listes stylisées */
+main ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+main ul li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 35px;
+}
+
+/* Icône personnalisée pour les listes */
+main ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff9800;
+    font-size: 1.5rem;
+}
+
+/* Séparateurs élégants */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff9800, transparent);
+    margin: 40px 0;
+}
+
